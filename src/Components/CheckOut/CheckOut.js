@@ -1,20 +1,27 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './CheckOut.css'
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
+import { useContext } from 'react';
+import { BookCotext } from '../../App';
 
 const CheckOut = () => {
 
+    const { value, value2 } = useContext(BookCotext)
+    const [book, setBook] = value2
     const { bookId } = useParams();
-    const [book, setBook] = useState([]);
-    console.log(book)
+    const history = useHistory()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/book/${bookId}`)
+        fetch(`https://murmuring-beyond-31979.herokuapp.com/book/${bookId}`)
             .then(res => res.json())
             .then(data => {
                 setBook(data[0])
             })
-    }, [bookId])
+    }, [setBook, bookId])
+
+    const goToOrders = () => {
+        history.push("/orders")
+    }
 
     return (
         <div className="container">
@@ -45,7 +52,7 @@ const CheckOut = () => {
                             </div>
                         </div>
                     </div>
-                    <button className="checkout-btn">Checkout</button>
+                    <button onClick={goToOrders} className="checkout-btn">Checkout</button>
                 </div>
             </div>
         </div>

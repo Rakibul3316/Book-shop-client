@@ -22,7 +22,7 @@ const Admin = () => {
         }
         console.log(bookData)
 
-        const url = 'http://localhost:5000/addBook'
+        const url = 'https://murmuring-beyond-31979.herokuapp.com/addBook'
 
         fetch(url, {
             method: 'POST',

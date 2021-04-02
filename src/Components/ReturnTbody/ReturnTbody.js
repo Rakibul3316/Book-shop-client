@@ -4,13 +4,13 @@ import deleteIcon from './Group 33150.png'
 const ReturnTbody = (props) => {
     const { bookName, addPrice, authorName, _id } = props.book;
 
-    const deleteBook = (id) => {
-        console.log(id)
-        fetch(`/deleteBook/${id}`, {
+    const deleteBook = (deleteBookID) => {
+        console.log(deleteBookID)
+        fetch(`https://murmuring-beyond-31979.herokuapp.com/deleteBook/${deleteBookID}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
-            .then(data => console.log("deleted success"))
+            .then(data => console.log(data))
 
     }
     return (

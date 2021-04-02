@@ -11,7 +11,7 @@ const ManageBook = () => {
     const [books, setBooks] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/books")
+        fetch("https://murmuring-beyond-31979.herokuapp.com/books")
             .then(res => res.json())
             .then(data => setBooks(data))
     }, [])

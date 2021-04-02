@@ -3,6 +3,7 @@ import './SingleBook.css'
 import { Link } from 'react-router-dom';
 
 const SingleBook = (props) => {
+
     const { image, authorName, bookName, addPrice, _id } = props.book
     return (
         <div className="col-md-4">

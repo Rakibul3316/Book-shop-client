@@ -1,0 +1,28 @@
+.google-sign-in {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-button {
+  border: 1px solid #333;
+  width: 450px;
+  height: 50px;
+  border-radius: 26px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sing-in-button-img {
+  margin-right: 30px;
+  /* float: right; */
+}
+
+.sing-in-button-img img {
+  width: 31px;
+  height: 31px;
+}
