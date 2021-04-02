@@ -29,6 +29,11 @@ const Home = () => {
                             </div>
                     }
                 </div>
+                <div className="spinner text-center">
+                    <div className="spinner-border spinner" role="status">
+                        <span className="sr-only">Loading...</span>
+                    </div>
+                </div>
             </div>
         </div>
     );
