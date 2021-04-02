@@ -1,6 +1,6 @@
 # Live Link Of this project
 
-[Book Shop](https://full-stack-client-assign-10.web.app/orders)
+[Book Shop](https://full-stack-client-assign-10.web.app)
 
 # About This Project
 
