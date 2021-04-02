@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { useHistory } from 'react-router';
 import { BookCotext } from '../../App';
@@ -7,9 +7,15 @@ import './Orders.css'
 const Orders = () => {
 
     const { value, value2 } = useContext(BookCotext)
+
     const [loggedInUser, setLoggedInUser] = value;
+
     const [book, setBook] = value2;
+
+    const [user, setUser] = useState([])
+
     const history = useHistory()
+
 
     const [order, setOrder] = useState({
         userName: "",
@@ -51,6 +57,12 @@ const Orders = () => {
     const backToHome = () => {
         history.push("/")
     }
+
+    useEffect(() => {
+        fetch("https://murmuring-beyond-31979.herokuapp.com/order?email=" + loggedInUser.email)
+            .then(res => res.json())
+            .then(data => setUser(data))
+    }, [])
 
 
 
