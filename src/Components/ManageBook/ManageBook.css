@@ -1,0 +1,30 @@
+.manage-table {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  width: 950px;
+}
+
+.admin-left-side nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.admin-left-side nav a {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.admin-left-side nav a img {
+  width: 7%;
+  margin-right: 10px;
+}
+
+.admin-left-side nav a:hover {
+  background-color: #2f216a;
+  text-decoration: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,56 @@
+.admin-left-side {
+  width: 326px;
+  height: 100vh;
+  background-color: #19103f;
+}
+
+.add-book-title {
+  height: 40px;
+  width: 100%;
+}
+
+.add-book-title h3 {
+  padding-left: 40px;
+}
+
+.add-book-wrapper {
+  width: 100%;
+  height: 94vh;
+  background-color: #f4f7fc;
+  position: relative;
+}
+
+.add-book-input {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  width: 950px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.add-book-input-left input,
+.add-book-input-right input {
+  width: 100%;
+  padding: 5px 10px;
+  background: #ffffff;
+  border: 0.666667px solid #c9c9c9;
+  border-radius: 3.33333px;
+  font-size: 14px;
+  outline: none;
+}
+
+.add-book-submit-btn {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.add-book-submit-btn button {
+  display: inline-block;
+  padding: 10px 28px;
+  background-color: #6946f4;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+}
